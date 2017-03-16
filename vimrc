@@ -15,6 +15,7 @@ Plugin 'omnicppcomplete'
 Plugin 'vim-syntastic/syntastic'
 "Plugin 'valloric/youcompleteme'
 "Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ltlollo/diokai'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'bbchung/gtags.vim'
 Plugin 'kien/ctrlp.vim'
@@ -89,3 +90,4 @@ let g:Gtags_Auto_Update = 1
 "let g:syntastic_cpp_cpplint_exec = 'cpplint'
 "clang format
 ":map <C-=> :ClangFormat<CR>
+colorscheme diokai

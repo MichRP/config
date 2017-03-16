@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Michael Rogov
+	email = michael@e8storage.com
+[core]
+  excludesfile = /Users/michaelr/.gitignore_global
+  editor = /usr/bin/vim
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+[push]
+	default = simple
