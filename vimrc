@@ -92,3 +92,7 @@ let g:Gtags_Auto_Update = 1
 "clang format
 ":map <C-=> :ClangFormat<CR>
 colorscheme diokai
+
+set textwidth=80
+set colorcolumn=+1
+hi ColorColumn guibg=#2d2d2d ctermbg=246
