@@ -72,7 +72,8 @@ set softtabstop=2
 set nu
 set bg=dark
 set ts=2
-set et
+autocmd Filetype cpp setlocal expandtab
+autocmd Filetype c setlocal noexpandtab
 
 set backspace=2
 
