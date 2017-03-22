@@ -11,5 +11,10 @@
   ci = commit
   st = status
   br = branch
+	d = difftool
 [push]
 	default = simple
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

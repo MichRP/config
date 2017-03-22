@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'brookhong/cscope.vim'
 Plugin 'chazy/cscope_maps'
 Plugin 'tpope/vim-fugitive'
+Plugin 'a.vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -93,6 +94,10 @@ let g:Gtags_Auto_Update = 1
 ":map <C-=> :ClangFormat<CR>
 colorscheme diokai
 
+"colored line at 81 column
 set textwidth=80
 set colorcolumn=+1
 hi ColorColumn guibg=#2d2d2d ctermbg=246
+
+"a.vim cc/hh support
+ "let g:alternateExtensions_{"cpp"} = "hh"
