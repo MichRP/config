@@ -1,6 +1,5 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
 	name = Michael Rogov
 	email = michael@e8storage.com
 [core]
@@ -16,5 +15,7 @@
 	default = simple
 [diff]
 	tool = vimdiff
+[pull]
+	rebase = true
 [difftool]
 	prompt = false
