@@ -25,7 +25,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'brookhong/cscope.vim'
 Plugin 'chazy/cscope_maps'
 Plugin 'tpope/vim-fugitive'
-Plugin 'a.vim'
+Plugin 'derekwyatt/vim-fswitch'
 call vundle#end()
 
 filetype plugin indent on
@@ -99,5 +99,6 @@ set textwidth=80
 set colorcolumn=+1
 hi ColorColumn guibg=#2d2d2d ctermbg=246
 
-"a.vim cc/hh support
- "let g:alternateExtensions_{"cpp"} = "hh"
+"fswitch
+command! A FSHere
+command! Z FSSplitAbove
