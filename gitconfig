@@ -3,8 +3,14 @@
 	name = Michael Rogov
 	email = michael@e8storage.com
 [core]
-  excludesfile = /Users/michaelr/.gitignore_global
-  editor = /usr/bin/vim
+	excludesfile = /Users/michaelr/.gitignore_global
+	editor = /usr/local/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [alias]
   co = checkout
   ci = commit
