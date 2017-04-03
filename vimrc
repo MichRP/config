@@ -13,8 +13,7 @@ Plugin 'L9'
 Plugin 'cppnav'
 Plugin 'omnicppcomplete'
 Plugin 'vim-syntastic/syntastic'
-"Plugin 'valloric/youcompleteme'
-"Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'mileszs/ack.vim'
 Plugin 'ltlollo/diokai'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'bbchung/gtags.vim'
@@ -73,6 +72,11 @@ set softtabstop=2
 set nu
 set bg=dark
 set ts=2
+
+augroup filetypedetect
+	    au BufRead,BufNewFile *.h set filetype=c
+augroup END
+
 autocmd Filetype cpp setlocal expandtab
 autocmd Filetype c setlocal noexpandtab
 
