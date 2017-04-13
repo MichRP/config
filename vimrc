@@ -75,6 +75,7 @@ set ts=2
 
 augroup filetypedetect
 	    au BufRead,BufNewFile *.h set filetype=c
+	    au BufRead,BufNewFile *.capnp set filetype=cpp
 augroup END
 
 autocmd Filetype cpp setlocal expandtab
