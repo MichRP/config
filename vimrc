@@ -108,4 +108,4 @@ hi ColorColumn guibg=#2d2d2d ctermbg=246
 command! A FSHere
 command! Z FSSplitAbove
 
-autocmd Filetype python call MakeSnip("python", "embed", "from IPython import embed; embed()")
+autocmd VimEnter * call MakeSnip("python", "embed", "from IPython import embed; embed()")
