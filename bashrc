@@ -16,3 +16,17 @@ function e8-qemu-whose() {
 function e8-qemu-kill() {
 	e8-qemu-whose | grep $1 | cut -f1 -d' ' | xargs --no-run-if-empty sudo kill -9
 }
+
+function up-branch() {
+	git branch -D $1
+	git fetch
+	CURR_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+	git co $1
+	git co $CURR_BRANCH
+}
+
+function cherry-pick-to() {
+	CURR_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+	git co $1
+	git cherry-pick $CURR_BRANCH
+}
