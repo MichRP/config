@@ -25,6 +25,7 @@ Plugin 'brookhong/cscope.vim'
 Plugin 'chazy/cscope_maps'
 Plugin 'tpope/vim-fugitive'
 Plugin 'derekwyatt/vim-fswitch'
+"Plugin 'valloric/youcompleteme'
 call vundle#end()
 
 filetype plugin indent on
@@ -109,3 +110,5 @@ command! A FSHere
 command! Z FSSplitAbove
 
 autocmd VimEnter * call MakeSnip("python", "embed", "from IPython import embed; embed()")
+
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
