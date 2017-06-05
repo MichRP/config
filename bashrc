@@ -2,6 +2,8 @@ export TERM=xterm-256color
 alias gg="git grep -n"
 alias gut="git"
 alias cd..="cd .."
+alias assh="ssh -o \"StrictHostKeyChecking=no\""
+alias ascp="scp -o \"StrictHostKeyChecking=no\""
 function f() {
 	find . -name "$1" 2> /dev/null
 }
