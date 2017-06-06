@@ -25,7 +25,7 @@ Plugin 'brookhong/cscope.vim'
 Plugin 'chazy/cscope_maps'
 Plugin 'tpope/vim-fugitive'
 Plugin 'derekwyatt/vim-fswitch'
-"Plugin 'valloric/youcompleteme'
+Plugin 'thinca/vim-visualstar'
 call vundle#end()
 
 filetype plugin indent on
