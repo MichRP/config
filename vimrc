@@ -110,5 +110,7 @@ command! A FSHere
 command! Z FSSplitAbove
 
 autocmd VimEnter * call MakeSnip("python", "embed", "from IPython import embed; embed()")
+autocmd VimEnter * call MakeSnip("python", "pdb", "import pdb; pdb.set_trace()")
+autocmd VimEnter * call MakeSnip("python", "ipdb", "import ipdb; ipdb.set_trace()")
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
