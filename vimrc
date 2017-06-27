@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -68,19 +69,16 @@ command! Wq wq
 command! Wqa wqa
 command! Q q
 
-set shiftwidth=2
-set softtabstop=2
 set nu
 set bg=dark
-set ts=2
 
 augroup filetypedetect
 	    au BufRead,BufNewFile *.h set filetype=c
 	    au BufRead,BufNewFile *.capnp set filetype=cpp
 augroup END
 
-autocmd Filetype cpp setlocal expandtab
-autocmd Filetype c setlocal noexpandtab
+autocmd Filetype cpp setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype c setlocal noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
 
 set backspace=2
 

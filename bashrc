@@ -2,8 +2,8 @@ export TERM=xterm-256color
 alias gg="git grep -n"
 alias gut="git"
 alias cd..="cd .."
-alias assh="ssh -o \"StrictHostKeyChecking=no\""
-alias ascp="scp -o \"StrictHostKeyChecking=no\""
+alias assh="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /home/michael/code/E8/id_rsa"
+alias ascp="scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /home/michael/code/E8/id_rsa"
 alias gtags="gtags --skip-unreadable"
 
 
